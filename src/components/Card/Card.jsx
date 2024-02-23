@@ -1,7 +1,7 @@
 import React from 'react'
 import './Card.scss'
-import img from '../../../public/img.png'
-import stars from '../../../public/stars.png'
+import img from '/img.png'
+import stars from '/stars.png'
 const Card = () => {
     return (
         <div className='card'>
