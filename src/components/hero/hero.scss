@@ -1,3 +1,9 @@
+$breakpoint-sm: 576px; // Small devices (phones)
+$breakpoint-md: 768px; // Medium devices (tablets)
+$breakpoint-lg: 992px; // Large devices (desktops)
+$breakpoint-xl: 1200px; // Extra large devices (large desktops)
+
+
 .hero {
     display: flex;
     // margin-top: 20px;
@@ -7,6 +13,24 @@
     margin: 0 200px;
     gap: 10px;
     margin-top: 20px;
+
+    @media (max-width: $breakpoint-sm) {
+        margin: 0 30px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+        margin: 0 40px;
+        padding: 20px;
+        margin-top: 15px;
+    }
+
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+        margin: 0 60px;
+        padding: 25px;
+        margin-top: 20px;
+    }
 
     .line {
         background: rgba(225, 228, 230, 1);
@@ -20,6 +44,16 @@
         font-weight: 400;
         color: rgba(44, 56, 74, 1);
         line-height: 60px;
+
+        @media (max-width: $breakpoint-sm) {
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+            font-size: 35px;
+            line-height: 50px;
+        }
     }
 
     .info {
@@ -31,11 +65,26 @@
         font-family: "Inter";
         font-weight: 400;
         color: rgba(75, 86, 101, 1);
+
+        @media (max-width: $breakpoint-sm) {
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+            font-size: 13px;
+            font-weight: 400;
+        }
+
         .info-1 {
             display: flex;
             align-items: center;
             flex-direction: row;
             gap: 10px;
+
+            @media (max-width: $breakpoint-sm) {
+                gap: 4px;
+            }
         }
 
         .info-2 {
@@ -50,6 +99,11 @@
         gap: 10px;
         left: 0;
 
+        @media (max-width: $breakpoint-sm) {
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
         .btn {
             width: 132px;
             height: 36px;
@@ -63,6 +117,27 @@
             display: flex;
             align-items: start;
             padding: 10px;
+
+            @media (max-width: $breakpoint-sm) {
+                width: 70px;
+                font-size: 11px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+                width: 90px;
+                font-size: 12px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+                width: 110px;
+                font-size: 13px;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 }

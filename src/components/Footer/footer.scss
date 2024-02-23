@@ -1,3 +1,8 @@
+$breakpoint-sm: 576px; // Small devices (phones)
+$breakpoint-md: 768px; // Medium devices (tablets)
+$breakpoint-lg: 992px; // Large devices (desktops)
+$breakpoint-xl: 1200px; // Extra large devices (large desktops)
+
 .footer {
     padding: 30px;
     padding-top: 50px;
@@ -8,6 +13,11 @@
     justify-content: space-around;
     font-family: "Inter";
     height: 432px;
+
+    @media (max-width: $breakpoint-sm) {
+        height: 300px;
+        padding: 20px;
+    }
 
     .category {
         display: flex;

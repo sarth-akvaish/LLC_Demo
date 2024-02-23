@@ -30,17 +30,16 @@ const Cardcontainer = () => {
       "content": "Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
       "desc": "Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.",
       "rating": 9.3,
-      "isMain": false,
       "remarks": "Exceptional",
       "isMain": false,
       "isBestValue": true,
-    }, {
+    }, 
+    {
       "id": 4,
       "heading": "CDK Resposive Builder",
       "content": "An extensive library of widgets and apps, and detailed step-by-step guides",
       "desc": false,
       "rating": 9.1,
-      "isMain": false,
       "remarks": "Very Good",
       "isMain": true,
       "isBestValue": true,
@@ -48,10 +47,6 @@ const Cardcontainer = () => {
   ]
   return (
     <div className='card-container'>
-      {/* <Card />
-      <Card />
-      <Card />
-      <Card /> */}
       {datas.map((data) => (
         <Card key={data.id} id={data.id} heading={data.heading} content={data.content} desc={data.desc} rating={data.rating} remarks={data.remarks} isBestValue={data.isBestValue} isMain={data.isMain} />
       ))}

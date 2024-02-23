@@ -1,9 +1,26 @@
+$breakpoint-sm: 576px; // Small devices (phones)
+$breakpoint-md: 768px; // Medium devices (tablets)
+$breakpoint-lg: 992px; // Large devices (desktops)
+$breakpoint-xl: 1200px; // Extra large devices (large desktops)
+
 .deals {
 
     padding: 30px;
     margin: 0 140px;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: $breakpoint-sm) {
+        margin: 0 30px;
+    }
+
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+        margin: 0 40px;
+    }
+
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-xl) {
+        margin: 0 20px;
+    }
 
     h1 {
         color: rgba(44, 56, 74, 1);
@@ -17,6 +34,18 @@
         display: flex;
         flex-direction: row;
 
+        @media (max-width: $breakpoint-sm) {
+            overflow-x: scroll;
+        }
+
+        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+            overflow-x: scroll;
+        }
+
+        @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+            overflow-x: scroll;
+        }
+
         .short-card {
             background-color: white;
             max-width: 320px;
@@ -27,6 +56,10 @@
             gap: 10px;
             border-radius: 12px;
             flex-direction: column;
+
+            @media (max-width: $breakpoint-sm) {
+                width: 300px;
+            }
 
             .img-container {
                 padding: 20px;
@@ -105,6 +138,10 @@
                 font-family: "Inter";
                 font-size: 16px;
                 cursor: pointer;
+
+                @media (max-width: $breakpoint-sm) {
+                    width: 250px;
+                }
             }
         }
     }

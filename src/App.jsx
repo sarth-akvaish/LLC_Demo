@@ -9,7 +9,7 @@ import Newsletter from './components/Newsletter/Newsletter'
 
 const App = () => {
   return (
-    <div className='app'>
+    <>
       <Navbar />
       <Hero />
       <BreadcrumbExample />
@@ -17,7 +17,7 @@ const App = () => {
       <Deals />
       <Newsletter />
       <Footer />
-    </div>
+    </>
   )
 }
 
