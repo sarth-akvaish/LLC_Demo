@@ -1,0 +1,41 @@
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding: 20px;
+    height: 171px;
+    gap: 60px;
+    flex-direction: row;
+
+    .heading {
+        color: rgba(92, 104, 116, 1);
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 32px;
+    }
+
+    .inputField {
+
+        input {
+            background-color: white;
+            border: none;
+            width: 348px;
+            height: 52px;
+            outline: none;
+            border-radius: 12px 0 0 12px;
+            text-align: center;
+        }
+
+        button {
+            background-color: rgba(27, 136, 244, 1);
+            font-family: "Inter";
+            width: 97px;
+            cursor: pointer;
+            height: 52px;
+            border: none;
+            border-radius: 0 12px 12px 0;
+            color: white;
+        }
+
+    }
+}

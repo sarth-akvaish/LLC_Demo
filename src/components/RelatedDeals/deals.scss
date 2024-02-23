@@ -1,0 +1,112 @@
+.deals {
+
+    padding: 30px;
+    margin: 0 140px;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        color: rgba(44, 56, 74, 1);
+        font-size: 32px;
+        font-weight: 400;
+        font-family: "Inter";
+    }
+
+    .short-cards-container {
+
+        display: flex;
+        flex-direction: row;
+
+        .short-card {
+            background-color: white;
+            max-width: 320px;
+            max-height: 425px;
+            display: flex;
+            margin: 10px;
+            padding: 20px;
+            gap: 10px;
+            border-radius: 12px;
+            flex-direction: column;
+
+            .img-container {
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .tags {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                gap: 10px;
+
+                p {
+                    padding: 5px 8px;
+                    background-color: rgba(242, 244, 247, 1);
+                    border-radius: 8px;
+                    color: rgba(7, 71, 134, 1);
+                    font-size: 13px;
+                    font-family: "Inter";
+                }
+            }
+
+            .heading {
+                text-align: center;
+                color: rgba(98, 110, 121, 1);
+                font-family: "Inter";
+                font-weight: 700;
+            }
+
+            .desc {
+                display: flex;
+                align-items: flex-start;
+                color: rgba(98, 110, 121, 1);
+                font-weight: 400;
+                font-size: 18px;
+            }
+
+            .price {
+                display: flex;
+                flex-direction: row;
+                align-items: end;
+                gap: 20px;
+
+                .first {
+                    color: rgba(92, 104, 116, 1);
+                    font-weight: 400;
+                    font-size: 20px;
+                    font-family: "Inter";
+
+                }
+
+                .second {
+                    color: rgba(159, 169, 179, 1);
+                    font-size: 14px;
+                    font-family: "Inter";
+                    font-weight: 400;
+                }
+
+                .third {
+                    color: rgba(239, 76, 93, 1);
+                    font-size: 13px;
+                    font-weight: 400;
+                    font-family: "Inter";
+                }
+            }
+
+            button {
+                background-color: rgba(27, 136, 244, 1);
+                border: none;
+                border-radius: 12px;
+                height: 45px;
+                width: 292px;
+                color: white;
+                font-family: "Inter";
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
