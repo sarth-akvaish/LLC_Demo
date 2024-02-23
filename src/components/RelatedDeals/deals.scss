@@ -11,7 +11,8 @@ $breakpoint-xl: 1200px; // Extra large devices (large desktops)
     flex-direction: column;
 
     @media (max-width: $breakpoint-sm) {
-        margin: 0 30px;
+        margin: 0 10px;
+        padding: 10px;
     }
 
     @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
