@@ -1,0 +1,102 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-items: center;
+    background-color: white;
+    // padding: 20px;
+    border-radius: 12px;
+    max-height: 255px;
+    margin: 20px;
+
+    .index {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        border: 1px solid rgb(126, 126, 126);
+        // top: 380px;
+        justify-content: center;
+        left: 190px;
+    }
+
+    .card-1 {
+        padding: 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .card-2 {
+        flex: 2;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        line-height: 20px;
+        justify-content: center;
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(75, 86, 101, 1);
+
+        .card2-head {
+            font-weight: 700;
+        }
+
+        .card2-main {
+            margin: 10px;
+            font-weight: 700;
+        }
+
+        .card2-get {
+            margin-left: 10px;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            background: transparent;
+            border: none;
+            color: rgba(27, 136, 244, 1);
+            font-family: "Inter";
+            font-size: 16px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+    }
+
+    .card-3 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+
+        .ratings {
+            margin: 0 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 5px;
+            background-color: rgba(243, 249, 255, 1);
+            border-radius: 0 0 12px 12px;
+        }
+
+        button {
+            background-color: rgba(27, 136, 244, 1);
+            border: none;
+            border-radius: 12px;
+            height: 45px;
+            color: white;
+            font-family: "Inter";
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+}
