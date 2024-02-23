@@ -11,6 +11,7 @@ const Cardcontainer = () => {
       "content": "Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
       "desc": "Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.",
       "rating": 9.8,
+      "isMain": false,
       "remarks": "Exceptional",
       "isBestValue": true
     },
@@ -19,6 +20,7 @@ const Cardcontainer = () => {
       "heading": "SiteCraft 68-Inch Ultimate Web Design Studio",
       "content": "Advanced Site Creation Toolkit, Intuitive Drag-and-Drop Editor for Dynamic Websites and E-commerce Platforms (Green/White)",
       "desc": "Gain access to the SiteCraft design studio, featuring a robust selection of design elements, SEO optimization tools, and e-commerce integrations.",
+      "isMain": false,
       "rating": 9.5,
       "remarks": "Excellent",
       "isBestValue": true
@@ -28,8 +30,20 @@ const Cardcontainer = () => {
       "content": "Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
       "desc": "Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.",
       "rating": 9.3,
+      "isMain": false,
       "remarks": "Exceptional",
-      "isBestValue": true
+      "isMain": false,
+      "isBestValue": true,
+    }, {
+      "id": 4,
+      "heading": "CDK Resposive Builder",
+      "content": "An extensive library of widgets and apps, and detailed step-by-step guides",
+      "desc": false,
+      "rating": 9.1,
+      "isMain": false,
+      "remarks": "Very Good",
+      "isMain": true,
+      "isBestValue": true,
     }
   ]
   return (
@@ -39,7 +53,7 @@ const Cardcontainer = () => {
       <Card />
       <Card /> */}
       {datas.map((data) => (
-        <Card key={data.id} id={data.id} heading={data.heading} content={data.heading} desc={data.desc} rating={data.rating} remarks={data.remarks} isBestValue={data.isBestValue } />
+        <Card key={data.id} id={data.id} heading={data.heading} content={data.content} desc={data.desc} rating={data.rating} remarks={data.remarks} isBestValue={data.isBestValue} isMain={data.isMain} />
       ))}
     </div>
   )

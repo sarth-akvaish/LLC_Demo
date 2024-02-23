@@ -6,7 +6,7 @@
     background-color: white;
     // padding: 20px;
     border-radius: 12px;
-    max-height: 255px;
+    // max-height: 255px;
     margin: 20px;
 
     .index {
@@ -52,6 +52,48 @@
         .card2-main {
             margin: 10px;
             font-weight: 700;
+
+            .main-high {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                font-weight: 400;
+                background-color: rgba(255, 244, 237, 1);
+                padding: 10px;
+                border-radius: 12px;
+                width: 300px;
+                gap:4px;
+
+                .hls {
+                    display: flex;
+                    flex-direction: row;
+                    font-weight: 400;
+                    gap: 10px;
+
+
+                    .short-btn {
+                        background-color: white;
+                        border-radius: 4px;
+                        padding: 0 4px ;
+                        color: rgba(27, 136, 244, 1);
+                    }
+                }
+            }
+
+            .loveit {
+                display: flex;
+                flex-direction: column;
+
+                .check {
+                    display: flex;
+                    flex-direction: row;
+                    // align-items: center;
+                    // justify-content: center;
+                    gap: 10px;
+                }
+            }
+
+
         }
 
         .card2-get {

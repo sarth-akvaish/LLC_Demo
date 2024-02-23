@@ -1,0 +1,46 @@
+.footer {
+    padding: 30px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(33, 39, 49, 1);
+    color: white;
+    justify-content: space-around;
+    font-family: "Inter";
+    height: 432px;
+
+    .category {
+        display: flex;
+        flex-direction: column;
+        color: rgba(209, 214, 218, 1);
+        font-size: 13px;
+        gap: 15px;
+    }
+
+    .category h3,
+    .contact h3 {
+        color: white;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        color: rgba(209, 214, 218, 1);
+        font-size: 13px;
+        gap: 15px;
+
+    }
+
+    .country {
+        display: flex;
+        justify-content: center;
+        color: rgba(209, 214, 218, 1);
+        font-family: "Inter";
+        margin-top: 50px;
+    }
+
+
+}
