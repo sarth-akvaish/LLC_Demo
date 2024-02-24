@@ -2,9 +2,11 @@ import React from 'react'
 import './Card.scss'
 import img from '/img.png'
 import stars from '/stars.png'
+import Bubble from '../Bubble/Bubble'
 const Card = (props) => {
     return (
         <div className='card'>
+            {props.isBestValue ? <Bubble /> : <></>}
             <div className='index'>{props.id}</div>
             <div className='card-1'>
                 <img src={img} alt="img" />

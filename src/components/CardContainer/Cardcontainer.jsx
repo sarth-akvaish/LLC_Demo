@@ -32,7 +32,7 @@ const Cardcontainer = () => {
       "rating": 9.3,
       "remarks": "Exceptional",
       "isMain": false,
-      "isBestValue": true,
+      "isBestValue": false,
     }, 
     {
       "id": 4,
@@ -42,7 +42,7 @@ const Cardcontainer = () => {
       "rating": 9.1,
       "remarks": "Very Good",
       "isMain": true,
-      "isBestValue": true,
+      "isBestValue": false,
     }
   ]
   return (
