@@ -22,6 +22,7 @@ $breakpoint-xl: 1200px; // Extra large devices (large desktops)
     @media (min-width: $breakpoint-md) and (max-width: $breakpoint-xl) {
         margin: 0 20px;
     }
+
     @media (min-width: $breakpoint-xl) {
         align-items: center;
     }
@@ -31,6 +32,11 @@ $breakpoint-xl: 1200px; // Extra large devices (large desktops)
         font-size: 32px;
         font-weight: 400;
         font-family: "Inter";
+
+        @media (max-width: $breakpoint-sm) {
+            font-size: 26px;
+        }
+
     }
 
     .short-cards-container {

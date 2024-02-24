@@ -24,12 +24,13 @@ $breakpoint-xl: 1200px; // Extra large devices (large desktops)
         width: 80%;
         margin: 10px;
     }
+
     @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
         flex-direction: row;
         width: 80%;
         margin: 10px;
     }
-    
+
 
     .index {
         position: absolute;
@@ -176,13 +177,14 @@ $breakpoint-xl: 1200px; // Extra large devices (large desktops)
 
         @media (max-width: $breakpoint-sm) {
             flex-direction: row;
-            gap: 30px;
             align-items: center;
+            gap: 30px;
+            margin: 10px;
         }
 
         @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
             flex-direction: row;
-            gap: 30px;
+            justify-content: space-between; 
             align-items: center;
         }
 
@@ -192,6 +194,7 @@ $breakpoint-xl: 1200px; // Extra large devices (large desktops)
             align-items: center;
             justify-content: center;
         }
+
         .ratings {
             margin: 0 50px;
             display: flex;
@@ -201,6 +204,25 @@ $breakpoint-xl: 1200px; // Extra large devices (large desktops)
             padding: 5px;
             background-color: rgba(243, 249, 255, 1);
             border-radius: 0 0 12px 12px;
+
+            @media (max-width: $breakpoint-sm) {
+                flex-direction: row;
+                margin: 0;
+                padding: 5px;
+                font-size: 12px;
+                gap: 5px;
+                border-radius: 12px;
+            }
+
+            @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 5px;
+                margin: 0;
+                font-size: 12px;
+                border-radius: 12px;
+            }
+
         }
 
         button {
@@ -214,7 +236,9 @@ $breakpoint-xl: 1200px; // Extra large devices (large desktops)
             cursor: pointer;
 
             @media (max-width: $breakpoint-sm) {
-                width: 100px;
+                width: 80px;
+                font-size: 14px;
+                height: 40px;
             }
 
             @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
